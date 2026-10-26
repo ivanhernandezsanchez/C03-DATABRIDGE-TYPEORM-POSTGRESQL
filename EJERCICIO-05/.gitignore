@@ -1,0 +1,10 @@
+# Dependencies and generated output
+**/node_modules/
+backend/dist/
+frontend/.expo/
+**/coverage/
+**/*.tsbuildinfo
+
+# Local environment files
+**/.env
+**/.env.*

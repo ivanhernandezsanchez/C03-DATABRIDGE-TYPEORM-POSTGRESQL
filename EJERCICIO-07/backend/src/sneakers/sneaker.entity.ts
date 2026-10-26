@@ -1,0 +1,11 @@
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+@Entity('sneakers')
+export class Sneaker {
+ @PrimaryGeneratedColumn() id:number;
+ @Column() marca:string;
+ @Column() modelo:string;
+ @Column('decimal',{precision:6,scale:2}) precio:number;
+ @Column() talla:number;
+ @Column({default:10}) stock:number;
+ @Column({default:'Disponible'}) agotado:string;
+}
