@@ -9,9 +9,9 @@ import { PeliculasModule } from './peliculas/peliculas.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 5433,
+      port: 5432,
       username: 'postgres',
-      password: '1234',
+      password: 'postgres',
       database: 'databridge_e02',
       autoLoadEntities: true,
       synchronize: true,
